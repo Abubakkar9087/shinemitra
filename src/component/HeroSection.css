@@ -9,7 +9,7 @@
     /* background: linear-gradient(135deg, #25D366, #128C7E, #061a3d); */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0px;
