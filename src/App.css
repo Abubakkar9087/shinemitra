@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+/* color palette */
+
+:root {
+  --color-primary: #25D366; /*Buttons, CTA (Call-to-Action), Links, Highlights */
+  --dark-background: #061a3d;
+  --light-background: #f8f9fa;
+  --text-color: #1be766;
+  --accent-color: #FFC107;
+  --odd-section: #f8f9fa;
+  --even-section: #fff;
+  --secondary-accent-color: #00bcd4;
+  --background-linear: linear-gradient(135deg, #25D366, #128C7E, #061a3d);
+  --dark-green: #128C7E; /* Navbar, Footer, Header Background */
+  --light-green: #DCF8C6; /* Hover Effects, Badges, Notifications Background */
+  --dark-gray: #202C33; 	/* Headings, Subheadings, Important Text */
+  --light-gray: #E9EDEF;	/* Background Sections, Cards, Forms */
+  --white: #FFFFFF; /* Text on Dark Backgrounds, Icons, Cards Background */
+  --black: #000000; 	/* Footer Text, Important Icons, Strong Contrast Elements */
+  
+  
+  /* 1. Navbar
+Background: #128C7E (Dark Green)
+Text Color: #FFFFFF (White)
+Hover Effect: #25D366 (Primary Green)
+Navbar Buttons: #25D366 (Primary Green) with text #FFFFFF
+
+
+2. Odd-Wise Section Background
+Odd Sections Background: #E9EDEF (Light Gray)
+Even Sections Background: #FFFFFF (White)
+
+
+3. Entire Website Background
+Main Background Color: #FFFFFF (White)
+
+
+4. Headings & Text
+Headings: #202C33 (Dark Gray)
+Body Text: #000000 (Black)
+
+
+5. Footer
+Background: #128C7E (Dark Green)
+Footer Links Color: #DCF8C6 (Light Green)
+Footer Links Hover: #25D366 (Primary Green)
+Footer Text: #FFFFFF (White) */
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,0 +1,191 @@
+.navbar-container{
+    width: 100%;
+    min-height: 100px;
+}
+
+/* -------------------------------------------------section 1 start------------------------------------------------- */
+.navbar-section-1{
+    width: 100%;
+    min-height: 40px;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-contact{
+    width: auto;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-contact-detail{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+
+    img{
+        width: 20px;
+        object-fit: contain;
+    }
+}
+
+.nav-social{
+    width: auto;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-social-icon{
+    width: 20px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease-in;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.scrolling-text-container {
+    height: 40px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scrolling-text {
+    position: absolute;
+    font-size: 16px;
+    white-space: nowrap;
+    animation: slideText 3s infinite;
+  }
+  
+  @keyframes slideText {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  }
+  
+/* -------------------------------------------------section 1 end------------------------------------------------- */
+
+
+
+/* -------------------------------------------------section 2 start------------------------------------------------- */
+.navbar-section-2{
+    width: 100%;
+    background-color: var(--light-gray);    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.nav-logo{
+    width: 150px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo img{
+    width: 100%;
+}
+.nav-list{
+    width: auto;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-links{
+    color: var(--dark-background);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.nav-links:hover{
+    /* color: var(--color-primary); */
+    color: #25D366;
+    transition: all 0.3s ease-in-out;
+}
+.nav-links::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.nav-links:hover::before{
+    width: 100%;
+}
+.nav-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-btn{
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-green);
+    background-color: var(--color-primary);
+    transition: .5s ease-in;
+    box-shadow: 8px 10px 0px var(--dark-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        color: var(--white);
+        background-color: var(--dark-background);
+        box-shadow: none;
+    }
+}
+
+/* -------------------------------------------------section 2 end------------------------------------------------- */
+
