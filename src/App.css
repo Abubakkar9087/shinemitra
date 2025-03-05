@@ -5,10 +5,10 @@
   --dark-background: #061a3d;
   --light-background: #f8f9fa;
   --text-color: #1be766;
-  --accent-color: #FFC107;
+  --accent-color: #ffc926;
   --odd-section: #f8f9fa;
   --even-section: #fff;
-  --secondary-accent-color: #00bcd4;
+  --secondary-accent-color: #a5eaf3e5;
   --background-linear: linear-gradient(135deg, #25D366, #128C7E, #061a3d);
   --dark-green: #128C7E; /* Navbar, Footer, Header Background */
   --light-green: #DCF8C6; /* Hover Effects, Badges, Notifications Background */
@@ -56,3 +56,11 @@ Footer Text: #FFFFFF (White) */
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--light-green);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--background-linear);
+  border-radius: 20px;
+}
