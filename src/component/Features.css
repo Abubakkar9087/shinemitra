@@ -78,15 +78,18 @@
     }
 
     .feature-connect{
-        width: 100%;
-        min-height: 150px;
         background-color: var(--color-primary);
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+        max-width: 1200px;
+        min-height: 100vh;
+        padding: 30px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 20px;
-
+    
+    
         h3{
             color: var(--white);
             font-size: 35px;
