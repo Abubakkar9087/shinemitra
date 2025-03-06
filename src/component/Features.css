@@ -48,7 +48,7 @@
             border:3px solid var(--color-primary);
             box-shadow: 4px 4px 0px var(--color-primary);
             transition: .3s ease-in;
-            display: flex;
+            display: flex !important;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -85,7 +85,7 @@
         max-width: 1200px;
         min-height: 100vh;
         padding: 30px 20px;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
     
